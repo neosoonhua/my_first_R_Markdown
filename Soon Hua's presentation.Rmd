@@ -1,0 +1,60 @@
+---
+title: "Soon Hua's Presentation"
+author: "Neo Soon Hua"
+date: "8 March 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+#Knitr option to make this Rmd file not echo the R codes. Deleting the line above would result in the default, which is echo=TRUE, which would show the below-mentioned R codes, e.g. "plot(pressure)", in the slides.
+```
+## Title of a new slide
+Contents of this new slide. Absence of blank line before the "###" below makes it NOT being recognised as a top-level sub-heading.
+
+### Top-level sub-heading
+
+#### Second-level sub-heading
+- Bullet 1
+    + Sub point
+1. Point 1
+2. Point 2
+
+>- Bullet 2 on click
+>- Bullet 3 on click
+
+## Text formatting
+*italicised text*
+
+**bold text**
+
+`twoRandomNormalValues = rnorm(2)`
+
+***
+Another new slide without a title. Absence of blank line before the "##" below makes it NOT start a new slide.
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE, comment=""}
+# comment="" to get rid of the "##" before each line of R output
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure, eval=FALSE}
+# eval=FALSE would make it NOT run the R code
+plot(pressure)
+```
+
